@@ -33,16 +33,6 @@ jobs:
         version_format: "${major}.${minor}.${patch}"
         bump_each_commit: false
 
-    - name: Update version in pom.xml (Release only)
-      run: |
-        mvn -B versions:set -DnewVersion=${{ steps.version.outputs.version }} -DgenerateBackupPoms=false --file pom.xml
-        git config user.email "dishantk@gmail.com"
-        git config user.name "Dishant Kamble"
-        git add .
-        git commit -m "Bump Version - maven"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml install -Dtoken=$GH_TOKEN
