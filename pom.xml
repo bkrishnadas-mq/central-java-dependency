@@ -193,7 +193,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Dishant Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/macquarie-it/central-java-dependency</url>
+            <url>https://maven.pkg.github.com/bkrishnadas-mq/central-java-dependency</url>
         </repository>
     </distributionManagement>
 </project>
