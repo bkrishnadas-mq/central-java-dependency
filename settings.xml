@@ -26,7 +26,7 @@
         <repository>
           <id>github</id>
           <name>GitHub Dishant Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/dishantkamble/central-java-dependency</url>
+          <url>https://maven.pkg.github.com/macquarie-it/central-java-dependency</url>
         </repository>
       </repositories>
     </profile>
@@ -35,7 +35,7 @@
   <servers>
     <server>
       <id>github</id>
-      <username>dishantkamble</username>
+      <username>bkrishnadas_mq</username>
       <password>${env.GITHUB_TOKEN}</password>
     </server>
   </servers>
